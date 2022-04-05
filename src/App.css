@@ -1,0 +1,264 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* GLOBAL */
+html {
+  font-family: "Inter", sans-serif;
+}
+
+:root {
+  --main-silver: #f4f3ee;
+  --main-gray-text: #a5a0a7;
+  --main-black: #2e2c2f;
+  --main-lightblue: #4b9ce7;
+  --main-lightestblue: #dbebfa;
+}
+
+h2 {
+  color: var(--main-black);
+  font-weight: 600;
+  font-size: 1.9rem;
+  line-height: 1.2;
+}
+
+/* HEADER / MENU */
+header {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 2px solid var(--main-silver);
+}
+
+h1 {
+  color: var(--main-black);
+  font-weight: 600;
+}
+
+.brand-mark-first-word {
+  font-weight: 300;
+}
+
+nav {
+  color: var(--main-black);
+}
+
+nav > ul {
+  display: flex;
+  list-style: none;
+}
+
+li {
+  padding: 0.5rem 2rem;
+}
+
+.search-cta-container {
+  display: flex;
+  font-size: 0.85rem;
+}
+
+.menu-search-form {
+  padding: 0rem 1.5rem;
+}
+
+.menu-cta {
+  color: var(--main-lightblue);
+  font-weight: 600;
+  text-decoration: none;
+  border: 1px solid var(--main-lightblue);
+  border-radius: 12px;
+  padding: 0.5rem 1.25rem;
+}
+
+.search-bar {
+  background-color: var(--main-lightestblue);
+  border: 1px solid var(--main-lightestblue);
+  border-radius: 100px;
+  padding: 0.5rem 0.5rem;
+}
+
+/* HERO */
+
+.big-bubbles {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  gap: 2rem;
+  grid-template-areas:
+    "a b"
+    "c d";
+  align-items: stretch;
+  margin: 6rem;
+}
+
+.bubble {
+  /* background-image: url(https://www.artic.edu/iiif/2/3a608f55-d76e-fa96-d0b1-0789fbc48f1e/full/843,/0/default.jpg); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 200px;
+  width: 90%;
+  max-width: 600px;
+  min-height: 15rem;
+}
+
+.bubble1 {
+  grid-area: a;
+  justify-self: end;
+}
+
+.bubble2 {
+  grid-area: b;
+  justify-self: start;
+}
+
+.bubble3 {
+  grid-area: c;
+  justify-self: end;
+  background-image: none;
+  background-color: var(--main-lightestblue);
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  padding: 2rem 3rem;
+}
+
+.bubble4 {
+  grid-area: d;
+  justify-self: start;
+}
+
+.bubble-heading-container {
+  display: flex;
+  align-items: center;
+}
+
+.bubble-text-container {
+  color: #a5a0a7;
+  font-size: 0.9rem;
+}
+
+.hero-browse-button {
+  color: #fff;
+  background-color: var(--main-lightblue);
+  font-weight: 400;
+  text-decoration: none;
+  border: 1px solid var(--main-lightblue);
+  border-radius: 12px;
+  padding: 0.5rem 1.25rem;
+  margin: 1rem;
+}
+
+/* STATS */
+
+.stats-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+.stats-container > section {
+  padding: 2rem 10rem;
+}
+
+.stats-number {
+  color: var(--main-black);
+  font-size: 2rem;
+}
+
+.stats-sub {
+  color: var(--main-gray-text);
+  font-size: 0.85rem;
+}
+
+/* ABOUT */
+
+.about-section {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  text-align: center;
+  padding: 5rem 5rem;
+}
+
+.about-image {
+  /* background-image: url(../public/images/about-header.jpeg); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 200px;
+  width: 100%;
+  max-width: 1200px;
+  min-height: 20rem;
+  margin: auto;
+}
+
+.about-section > h2 {
+    padding: 2rem;
+}
+
+.about-section > p {
+    color: var(--main-gray-text);
+    font-size: .9rem;
+    padding: 0rem 2rem 1rem 2rem;
+    max-width: 1200px;
+    margin: auto;
+}
