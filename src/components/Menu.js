@@ -14,7 +14,7 @@ function Menu() {
       </nav>
 
       <div className="search-cta-container">
-        <form class="menu-search-form">
+        <form className="menu-search-form">
           <input type="search" placeholder="🔍 &nbsp;Search" className="search-bar" />
         </form>
         <a href="#" className="menu-cta">Buy now</a>
