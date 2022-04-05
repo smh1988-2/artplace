@@ -6,7 +6,7 @@ function ExploreArt({ artData }) {
     <>
     <h2>Explore Top Prints</h2>
     <section className="explore-art-container">
-      
+    
 
       {artData.data
         ? artData.data.map((artwork) => 
