@@ -86,6 +86,7 @@ header {
   justify-content: space-around;
   align-items: center;
   border-bottom: 2px solid var(--main-silver);
+  padding: 0rem 8rem 0rem 8rem;
 }
 
 h1 {
@@ -98,6 +99,7 @@ h1 {
 }
 
 nav {
+  flex-grow: 1;
   color: var(--main-black);
 }
 
@@ -250,21 +252,140 @@ li {
 }
 
 .about-section > h2 {
-    padding: 2rem;
+  padding: 2rem;
 }
 
 .about-section > p {
-    color: var(--main-gray-text);
-    font-size: .9rem;
-    padding: 0rem 2rem 1rem 2rem;
-    max-width: 1200px;
-    margin: auto;
+  color: var(--main-gray-text);
+  font-size: 0.9rem;
+  padding: 0rem 2rem 1rem 2rem;
+  max-width: 1200px;
+  margin: auto;
 }
 
-/* EXPLORE ART */
+/* EXPLORE ART / FEATURED ARTIST */
 
 .explore-art-container {
-    display:flex;
-    flex-flow: row wrap;
+  display: flex;
+  flex-flow: row wrap;
   justify-content: space-around;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.art-section-container {
+  padding-bottom: 5rem;
+}
+
+.explore-art-header-container {
+  max-width: 1200px;
+  padding: 1rem 1rem;
+  margin: auto;
+  display: flex;
+}
+
+.art-card {
+  position: relative;
+  width: 50%;
+  max-width: 300px;
+  margin: 1rem 2rem 1rem 2rem;
+}
+
+.art-card-image {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 15px;
+  display: block;
+  width: 100%;
+  height: 20rem;
+}
+
+.art-card-overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  color: white;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.art-card-artist,
+.art-card-description,
+.art-card-title {
+  color: var(--main-gray-text);
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  padding: 0.25rem 0.75rem 0.25rem 0.75rem;
+}
+
+/* FOOTER */
+
+.footer-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  margin: auto;
+  background-color: var(--main-lightestblue);
+}
+
+footer {
+    display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: 3rem 1rem 5rem 1rem;
+  background-color: var(--main-lightestblue);
+  margin: auto;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.footer-text-container {
+  width: 11rem;
+}
+
+.footer-text {
+  font-size: 0.9rem;
+  color: var(--main-gray-text);
+  padding-top: 1.5rem;
+}
+
+.footer-menu {
+  list-style: none;
+  margin-block-start: 0em;
+  margin-inline-end: 0px;
+  padding-inline-start: 0px;
+  font-size: 0.9rem;
+}
+
+.footer-menu > li {
+  padding: 0rem;
+  padding-top: 1.5rem;
+}
+
+.footer-menu > li > a {
+  text-decoration: none;
+  color: var(--main-gray-text);
+}
+
+.footer-form {
+  padding-top: 1rem;
+}
+
+.email {
+  background-color: #fff;
+  border: 1px solid #fff;
+  border-radius: 100px;
+  padding: 0.5rem 0.75rem;
+}
+
+small {
+  display: flex;
+  justify-content: center;
+  color: var(--main-gray-text);
+  padding: 1rem 0rem;
 }
