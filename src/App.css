@@ -337,7 +337,7 @@ footer {
     display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  padding: 3rem 5rem 5rem 5rem;
+  padding: 3rem 1rem 5rem 1rem;
   background-color: var(--main-lightestblue);
   margin: auto;
   width: 100%;

@@ -36,7 +36,6 @@ export default App;
 
 
 // ART add pagination?
-// FAQ?
 // BOTTOM CTA
-//FOOTER
+
 
