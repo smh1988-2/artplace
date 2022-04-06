@@ -12,14 +12,12 @@ function FeaturedArtist() {
     )
       .then((resp) => resp.json())
       .then((resp) => {
-        console.log(resp);
         setFeaturedArtistWorks(resp);
       });
   }, [featuredArtistSearch]);
 
   function handleFeaturedArtistSubmit(e) {
     e.preventDefault();
-    console.log(e.target[0].value)
     setFeaturedArtistSearch(e.target[0].value)
   }
 
@@ -40,7 +38,7 @@ function FeaturedArtist() {
       </div>
 
       <section className="explore-art-container">
-        {featuredArtistWorks.data.length > 0
+        {featuredArtistWorks.data
           ? featuredArtistWorks.data.map((artwork) => (
               <ExploreArtCard artwork={artwork} />
             ))
