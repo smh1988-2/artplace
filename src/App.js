@@ -7,6 +7,7 @@ import About from './components/About';
 import { useEffect, useState } from 'react';
 import ExploreArt from './components/ExploreArt';
 import FeaturedArtist from './components/FeaturedArtist';
+import Footer from './components/Footer';
 
 function App() {
 
@@ -26,6 +27,7 @@ function App() {
       <About artData={artData} />
       <ExploreArt artData={artData} />
       <FeaturedArtist />
+      <Footer />
     </div>
   );
 }
@@ -34,7 +36,6 @@ export default App;
 
 
 // ART add pagination?
-// FEATURED ART
 // FAQ?
 // BOTTOM CTA
 //FOOTER
