@@ -24,7 +24,7 @@ function FeaturedArtist() {
   return (
     <article className="art-section-container">
       <div className="explore-art-header-container">
-        <h2>Featured Artist</h2>
+        <h2>Search Artists</h2>
 
         <div className="search-cta-container">
           <form className="menu-search-form" onSubmit={handleFeaturedArtistSubmit}>
